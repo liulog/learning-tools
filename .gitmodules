@@ -1,0 +1,6 @@
+[submodule "exercises/learning-cxx"]
+	path = exercises/learning-cxx
+	url = https://github.com/liulog/learning-cxx
+[submodule "exercises/rustlings"]
+	path = exercises/rustlings
+	url = git@github.com:liulog/rustlings.git
