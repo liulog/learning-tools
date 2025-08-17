@@ -1,8 +1,7 @@
 # learning-in-opencamp
 OpenCamp 训练营通用学习工具
 
-这是一个用于在本地对多种编程课程练习进行评测的工具，支持 Rust、C++ 等多种语言的课程，无需依赖 GitHub Actions。
-
+这是一个用于在本地对多种编程课程练习进行评测的工具，支持 Rust、C++ 等多种语言的课程。
 ## 功能特点
 
 - 🚀 **多课程支持**: 支持 `learning-lm-rs`、`learning-cxx`、`rustlings` 等多种课程类型
@@ -55,13 +54,13 @@ curl -fsSL https://xmake.io/shget.text | bash
 
 1. 克隆本仓库
 ```bash
-git clone https://github.com/yourusername/learning-tools.git
-cd learning-tools
+git clone https://github.com/yourusername/learning-in-opencamp.git
+cd learning-in-opencamp
 ```
 
 2. 编译项目
 ```bash
-cargo build --release
+cargo build 
 ```
 
 ## 使用方法
@@ -95,7 +94,9 @@ cargo xtask eval --verbose
 #### 评测指定课程
 ```bash
 # 评测指定课程
-cargo xtask eval --course learning-lm-rs
+cargo xtask eval --course learning-cxx
+
+cargo xtask eval --course rustlings
 
 # 评测指定路径的课程
 cargo xtask eval --path ./my-exercises --verbose
@@ -155,7 +156,6 @@ learning-tools/
 │   │   └── setup.rs       # 环境配置
 │   └── Cargo.toml
 ├── environment/           # 环境配置模块
-├── course/               # 课程管理模块
 └── eval_result.json      # 评测结果文件
 ```
 
@@ -185,8 +185,8 @@ A: 目前支持 learning-lm-rs、learning-cxx、rustlings 等，可以通过扩�
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/learning-tools.git
-cd learning-tools
+git clone https://github.com/yourusername/learning-in-opencamp.git
+cd learning-in-opencamp
 
 # 安装依赖并编译
 cargo build
